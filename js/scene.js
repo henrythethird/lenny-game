@@ -17,14 +17,6 @@ class Scene extends Entity {
     }
 
     draw(dt) {
-        if (this.gameover) {
-            drawer.drawText('Game Over!', 100, 400, 'Arial', '70px', 'black', 'left');
-
-            drawer.drawText(Math.floor(this.score * 10)+'', 100, 100, 'Arial', '50px', 'black', 'left');
-
-            return;
-        }
-
         drawer.drawImage(this, this.background);
 
         drawer.drawImage(this, this.distantFoliage);
@@ -34,5 +26,9 @@ class Scene extends Entity {
         drawer.drawImage(this, this.ground);
 
         drawer.drawText(Math.floor(this.score * 10)+'', 100, 100, 'Arial', '50px', 'black', 'left');
+	    
+	if (this.gameover) {
+            drawer.drawText('Game Over!', 100, 400, 'Arial', '70px', 'black', 'left');
+        }
     }
 }
