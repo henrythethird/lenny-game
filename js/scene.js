@@ -1,16 +1,16 @@
 class Scene extends Entity {
     initialize() {
         this.background = new Image;
-        this.background.src = 'resources/images/_11_background.png';
+        this.background.src = 'resources/images/background.png';
 
         this.foliage = new Image;
-        this.foliage.src = 'resources/images/_02_trees and bushes.png';
+        this.foliage.src = 'resources/images/trees.png';
 
         this.distantFoliage = new Image;
-        this.distantFoliage.src = 'resources/images/_03_distant_trees.png';
+        this.distantFoliage.src = 'resources/images/distant_trees.png';
 
         this.ground = new Image;
-        this.ground.src = 'resources/images/_01_ground.png';
+        this.ground.src = 'resources/images/ground.png';
 
         this.gameover = false;
         this.score = 0;
