@@ -7,6 +7,10 @@ var scene = new Scene(0, 0, 1000, 600);
 var lastSpawn = 0;
 
 function draw() {
+    if (scene.gameover) {
+        return;
+    }
+
     var newTime = (new Date()).getTime();
     var delta = (newTime - time) / 1000.0;
 
